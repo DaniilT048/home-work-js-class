@@ -3,8 +3,8 @@
 
 import{Humans}from'./Human.js'
 import {Apartment} from "./Apartment.js"
-// import {House} from "./House.js"
-// import(House)
+import{House}from'./House.js'
+
 
 
 const human1 = new Humans('Евгений', 'Мужчина' );
@@ -16,13 +16,19 @@ human3.person();
 const human4 = new Humans('Николай', 'Мужчина' );
 human4.person();
 
-const apartmnets = new Apartment()
-apartmnets.addOccupant(human1)
-apartmnets.addOccupant(human2)
-apartmnets.addOccupant(human3)
-apartmnets.addOccupant(human4)
-console.log(apartmnets.apartmentList());
+const apartments = new Apartment()
+apartments.addOccupant(human1)
+apartments.addOccupant(human2)
+apartments.addOccupant(human3)
 
+const apartments2 = new Apartment()
+apartments2.addOccupant(human4)
+console.log(apartments.occupantList());
+
+const BigHouse = new House()
+BigHouse.addApartmentInHouse(apartments)
+BigHouse.addApartmentInHouse(apartments2)
+console.log(BigHouse.apartmentList())
 /*
 #1
 Усі класи розкласти по своїм файлам і імпортувати! Наприклад, клас Human має бути в окремому файлі Human.js

@@ -15,7 +15,7 @@ export class Apartment {
             console.log('Мест нет');
         }
     }
-    apartmentList(){
+    occupantList(){
         return this.occupant.map(humans => humans.name);
     }
 
