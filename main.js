@@ -11,10 +11,10 @@ human1.person();
 const human2 = new Humans('Елена', 'Женщина' );
 human2.person();
 
-const apartmnets1 = new Apartment()
-apartmnets1.addOccupant(human1)
-apartmnets1.addOccupant(human2)
-console.log(apartmnets1.apartmentList());
+const apartmnets = new Apartment()
+apartmnets.addOccupant(human1)
+apartmnets.addOccupant(human2)
+console.log(apartmnets.apartmentList());
 
 /*
 #1

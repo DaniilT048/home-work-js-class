@@ -12,7 +12,7 @@ export class Apartment {
 
     }
     apartmentList(){
-        return this.occupant;
+        return this.occupant.map(humans => humans.name);
     }
 
 }
