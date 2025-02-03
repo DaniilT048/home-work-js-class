@@ -6,11 +6,15 @@ import {Apartment} from "./Apartment.js"
 
 
 
-const human1 = new Humans('Евгений', 'Мужина' );
+const human1 = new Humans('Евгений', 'Мужчина' );
 human1.person();
+const human2 = new Humans('Елена', 'Женщина' );
+human2.person();
 
-const apartmnet1 = new Apartment(human1);
-apartmnet1.apartmentJoin()
+const apartmnets1 = new Apartment()
+apartmnets1.addOccupant(human1)
+apartmnets1.addOccupant(human2)
+console.log(apartmnets1.apartmentList());
 
 /*
 #1

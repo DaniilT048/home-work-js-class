@@ -3,13 +3,17 @@
 import {Humans} from "./Human.js";
 
 export class Apartment {
-    occupantArray = [];
-
-    apartmentJoin(){
-        this.occupantArray.push([Humans]);
-        console.log(this.occupantArray = []);
+    constructor(){
+        this.occupant = [];
     }
 
+    addOccupant(item){
+        this.occupant.push(item);
+
+    }
+    apartmentList(){
+        return this.occupant;
+    }
 
 }
 
