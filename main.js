@@ -3,17 +3,24 @@
 
 import{Humans}from'./Human.js'
 import {Apartment} from "./Apartment.js"
-
+// import {House} from "./House.js"
+// import(House)
 
 
 const human1 = new Humans('Евгений', 'Мужчина' );
 human1.person();
 const human2 = new Humans('Елена', 'Женщина' );
 human2.person();
+const human3 = new Humans('София', 'Женщина' );
+human3.person();
+const human4 = new Humans('Николай', 'Мужчина' );
+human4.person();
 
 const apartmnets = new Apartment()
 apartmnets.addOccupant(human1)
 apartmnets.addOccupant(human2)
+apartmnets.addOccupant(human3)
+apartmnets.addOccupant(human4)
 console.log(apartmnets.apartmentList());
 
 /*

@@ -8,8 +8,12 @@ export class Apartment {
     }
 
     addOccupant(item){
+        if(this.occupant.length <= 2){
         this.occupant.push(item);
-
+        }
+        else {
+            console.log('Мест нет');
+        }
     }
     apartmentList(){
         return this.occupant.map(humans => humans.name);
