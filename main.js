@@ -20,13 +20,27 @@ const apartments = new Apartment()
 apartments.addOccupant(human1)
 apartments.addOccupant(human2)
 apartments.addOccupant(human3)
+console.log(apartments.occupantList());
 
 const apartments2 = new Apartment()
 apartments2.addOccupant(human4)
-console.log(apartments.occupantList());
+apartments2.addOccupant(human4)
+apartments2.addOccupant(human4)
+apartments2.addOccupant(human4)
+console.log(apartments2.occupantList());
 
 const BigHouse = new House()
 BigHouse.addApartmentInHouse(apartments)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(apartments2)
 BigHouse.addApartmentInHouse(apartments2)
 console.log(BigHouse.apartmentList())
 /*
