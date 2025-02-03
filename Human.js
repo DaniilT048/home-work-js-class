@@ -1,6 +1,6 @@
 'use strict';
 
-class Humans {
+export class Humans {
     constructor(name, gender) {
         this.name = name;
         this.gender = gender;
@@ -10,4 +10,4 @@ class Humans {
     }
 }
 
-export {Humans};
+

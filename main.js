@@ -1,11 +1,17 @@
 'use strict';
 
 
-
 import{Humans}from'./Human.js'
+import {Apartment} from "./Apartment.js"
+
+
 
 const human1 = new Humans('Евгений', 'Мужина' );
 human1.person();
+
+const apartmnet1 = new Apartment(human1);
+apartmnet1.apartmentJoin()
+
 /*
 #1
 Усі класи розкласти по своїм файлам і імпортувати! Наприклад, клас Human має бути в окремому файлі Human.js
