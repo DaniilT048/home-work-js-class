@@ -15,21 +15,25 @@ const human3 = new Humans('София', 'Женщина' );
 human3.person();
 const human4 = new Humans('Николай', 'Мужчина' );
 human4.person();
+const human5 = new Humans('Николай', 'Мужчина' );
+const human6 = new Humans('Николай', 'Мужчина' );
+const human7 = new Humans('Николай', 'Мужчина' );
+const human8 = new Humans('Николай', 'Мужчина' );
 
 const apartments = new Apartment()
-apartments.addOccupant(human1)
-apartments.addOccupant(human2)
-apartments.addOccupant(human3)
-console.log(apartments.occupantList());
+apartments.addResident(human1)
+apartments.addResident(human2)
+apartments.addResident(human3)
+console.log(apartments.residentList());
 
 const apartments2 = new Apartment()
-apartments2.addOccupant(human4)
-apartments2.addOccupant(human4)
-apartments2.addOccupant(human4)
-apartments2.addOccupant(human4)
-console.log(apartments2.occupantList());
+apartments2.addResident(human4)
+apartments2.addResident(human4)
+apartments2.addResident(human4)
+apartments2.addResident(human4)
+console.log(apartments2.residentList());
 
-const BigHouse = new House()
+const BigHouse = new House(6)
 BigHouse.addApartmentInHouse(apartments)
 BigHouse.addApartmentInHouse(apartments2)
 BigHouse.addApartmentInHouse(apartments2)

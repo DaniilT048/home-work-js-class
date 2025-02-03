@@ -3,20 +3,21 @@
 import {Humans} from "./Human.js";
 
 export class Apartment {
-    constructor(){
-        this.occupant = [];
+    constructor(maxResidents){
+        this.residents = [];
+        this.maxResidents = maxResidents || 3;
     }
 
-    addOccupant(item){
-        if(this.occupant.length <= 2){
-        this.occupant.push(item);
+    addResident(item){
+        if(this.residents.length < this.maxResidents) {
+        this.residents.push(item);
         }
         else {
             console.log('Мест нет');
         }
     }
-    occupantList(){
-        return this.occupant.map(humans => humans.name);
+    residentList(){
+        return this.residents.map(humans => humans.name);
     }
 
 }

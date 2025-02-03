@@ -1,14 +1,15 @@
 'use strict';
 
-// import {Apartment} from "./Apartment";
-// import {Humans} from "./Human";
-//
- export class House {
-      constructor() {
+
+import {Apartment} from "./Apartment.js";
+
+export class House {
+      constructor(maxApartm) {
           this.apartment = []
+          this.maxApartm = maxApartm || 5;
       }
       addApartmentInHouse(item) {
-          if(this.apartment.length <= 9){
+          if(this.apartment.length < this.maxApartm) {
               this.apartment.push(item);
           }
           else{
