@@ -5,7 +5,7 @@ import {Apartment} from "./Apartment.js";
 
 export class House {
       constructor(maxApartm) {
-          this.apartment = []
+          this.apartments = []
           this.maxApartm = maxApartm || 5;
       }
       addApartmentInHouse(item) {
@@ -14,14 +14,11 @@ export class House {
               return;
           }
 
-          if(this.apartment.length < this.maxApartm) {
-              this.apartment.push(item);
+          if(this.apartments.length < this.maxApartm) {
+              this.apartments.push(item);
           }
           else{
               console.log('Больше квартир нет')
           }
       }
-     apartmentList(){
-        return this.apartment;
-     }
  }

@@ -1,6 +1,6 @@
 'use strict';
 
-import {Humans} from "./Human.js";
+import {Human} from "./Human.js";
 
 export class Apartment {
     constructor(maxResidents){
@@ -9,7 +9,7 @@ export class Apartment {
     }
 
     addResident(item){
-        if(!(item instanceof Humans)) {
+        if(!(item instanceof Human)) {
             console.log('Ошибка. Вы не человек');
             return;
         }
@@ -22,7 +22,7 @@ export class Apartment {
         }
     }
 
-    residentList(){
+    getResidentsNames(){
         return this.residents.map(humans => humans.name);
     }
 
