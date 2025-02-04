@@ -26,14 +26,14 @@ apartments.addResident(human2)
 apartments.addResident(human3)
 console.log(apartments.residentList());
 
-const apartments2 = new Apartment()
+const apartments2 = new Apartment(2)
 apartments2.addResident(human4)
 apartments2.addResident(human4)
 apartments2.addResident(human4)
-apartments2.addResident(human4)
+apartments2.addResident(apartments)
 console.log(apartments2.residentList());
 
-const BigHouse = new House(6)
+const BigHouse = new House(12)
 BigHouse.addApartmentInHouse(apartments)
 BigHouse.addApartmentInHouse(apartments2)
 BigHouse.addApartmentInHouse(apartments2)
@@ -46,6 +46,8 @@ BigHouse.addApartmentInHouse(apartments2)
 BigHouse.addApartmentInHouse(apartments2)
 BigHouse.addApartmentInHouse(apartments2)
 BigHouse.addApartmentInHouse(apartments2)
+BigHouse.addApartmentInHouse(human1)
+
 console.log(BigHouse.apartmentList())
 /*
 #1

@@ -9,6 +9,11 @@ export class House {
           this.maxApartm = maxApartm || 5;
       }
       addApartmentInHouse(item) {
+          if (!(item instanceof Apartment)) {
+              console.log("Ошибка. Это не квартира");
+              return;
+          }
+
           if(this.apartment.length < this.maxApartm) {
               this.apartment.push(item);
           }

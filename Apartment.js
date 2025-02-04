@@ -9,6 +9,11 @@ export class Apartment {
     }
 
     addResident(item){
+        if(!(item instanceof Humans)) {
+            console.log('Ошибка. Вы не человек');
+            return;
+        }
+
         if(this.residents.length < this.maxResidents) {
         this.residents.push(item);
         }
@@ -16,6 +21,7 @@ export class Apartment {
             console.log('Мест нет');
         }
     }
+
     residentList(){
         return this.residents.map(humans => humans.name);
     }
